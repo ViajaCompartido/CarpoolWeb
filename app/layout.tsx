@@ -18,8 +18,8 @@ function Navbar() {
           Carpool
         </Link>
         <div className="hidden sm:flex items-center gap-8 text-sm text-gray-600">
-          <a href="/#como-funciona" className="hover:text-gray-900 transition">Cómo funciona</a>
-          <a href="/#funciones" className="hover:text-gray-900 transition">Funciones</a>
+          <a href="/CarpoolWeb/#como-funciona" className="hover:text-gray-900 transition">Cómo funciona</a>
+          <a href="/CarpoolWeb/#funciones" className="hover:text-gray-900 transition">Funciones</a>
           <a href="#" className="bg-[#FF385C] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#e0314f] transition">
             Descargar
           </a>
