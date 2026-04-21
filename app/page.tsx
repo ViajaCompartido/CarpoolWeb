@@ -4,6 +4,8 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { BotonesDescarga } from "./components/BotonesDescarga";
 
+const basePath = "/CarpoolWeb";
+
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 import lottieViaje from "../public/assets/lottie-viaje.json";
@@ -39,10 +41,10 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { paso: "1", titulo: "Registrate", desc: "Creá tu cuenta gratis en segundos con Google o email.", img: "/assets/confirmado2.svg" },
-              { paso: "2", titulo: "Publicá o buscá", desc: "¿Tenés auto? Publicá tu viaje. ¿Buscás uno? Explorá los disponibles o publicá tu búsqueda.", img: "/assets/buscando.svg" },
-              { paso: "3", titulo: "Coordiná", desc: "Ponete de acuerdo con tu compañero de viaje sobre el punto de encuentro y la contribución a los gastos.", img: "/assets/explorando.svg" },
-              { paso: "4", titulo: "Viajá y ahorrá", desc: "Compartí el camino, los gastos y disfrutá del viaje.", img: "/assets/viaje.svg" },
+              { paso: "1", titulo: "Registrate", desc: "Creá tu cuenta gratis en segundos con Google o email.", img: `${basePath}/assets/confirmado2.svg` },
+              { paso: "2", titulo: "Publicá o buscá", desc: "¿Tenés auto? Publicá tu viaje. ¿Buscás uno? Explorá los disponibles o publicá tu búsqueda.", img: `${basePath}/assets/buscando.svg` },
+              { paso: "3", titulo: "Coordiná", desc: "Ponete de acuerdo con tu compañero de viaje sobre el punto de encuentro y la contribución a los gastos.", img: `${basePath}/assets/explorando.svg` },
+              { paso: "4", titulo: "Viajá y ahorrá", desc: "Compartí el camino, los gastos y disfrutá del viaje.", img: `${basePath}/assets/viaje.svg` },
             ].map((item) => (
               <div key={item.paso} className="text-center">
                 <Image src={item.img} alt={item.titulo} width={120} height={120} className="mx-auto mb-4" />
@@ -120,7 +122,7 @@ export default function Home() {
       {/* CTA final */}
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <Image src="/assets/road-trip.svg" alt="Road trip" width={200} height={140} className="mx-auto mb-8" />
+          <Image src={`${basePath}/assets/road-trip.svg`} alt="Road trip" width={200} height={140} className="mx-auto mb-8" />
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Empezá a viajar compartido
           </h2>
