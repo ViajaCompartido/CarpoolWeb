@@ -45,6 +45,7 @@ function Footer() {
             <ul className="space-y-2 text-sm text-gray-500">
               <li><Link href="/privacidad" className="hover:text-gray-900 transition">Política de Privacidad</Link></li>
               <li><Link href="/terminos" className="hover:text-gray-900 transition">Términos y Condiciones</Link></li>
+              <li><Link href="/eliminar-cuenta" className="hover:text-gray-900 transition">Eliminar mi cuenta</Link></li>
             </ul>
           </div>
           <div>

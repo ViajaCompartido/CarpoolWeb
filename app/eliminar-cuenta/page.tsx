@@ -27,7 +27,6 @@ export default function EliminarCuenta() {
         <h2 className="text-lg font-semibold text-gray-900 mt-8 mb-3">¿Qué datos se eliminan?</h2>
         <ul className="text-gray-600 leading-relaxed space-y-2 list-disc pl-6">
           <li>Nombre, apellido, teléfono y foto de perfil</li>
-          <li>Datos de vehículos registrados</li>
           <li>Tokens de notificaciones push</li>
           <li>Favoritos y búsquedas guardadas</li>
           <li>Solicitudes e invitaciones pendientes</li>
@@ -39,6 +38,7 @@ export default function EliminarCuenta() {
         </p>
         <ul className="text-gray-600 leading-relaxed space-y-2 list-disc pl-6">
           <li>Historial de viajes realizados (sin datos personales)</li>
+          <li>Datos de vehículos registrados (marca, modelo, patente), vinculados al perfil anonimizado</li>
           <li>Calificaciones otorgadas y recibidas (anonimizadas)</li>
           <li>Registros de comisiones (por requisitos tributarios)</li>
         </ul>
